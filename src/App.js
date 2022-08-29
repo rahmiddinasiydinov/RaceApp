@@ -8,12 +8,13 @@ import { getGarage } from './Redux/ActionsCreators';
 function App() {
   axios.defaults.baseURL='http://localhost:3001/';
   const dispatch = useDispatch();
- useEffect(()=>{
-  //  dispatch(getGarage())
- } )
+  const handleClick = ()=>{
+    dispatch(getGarage())
+  }
   return (
     <div className="App">
    <h1>Hello world</h1>
+   <button onClick={handleClick}>Click to test</button>
     </div>
   );
 }
