@@ -2,11 +2,9 @@ import './App.scss';
 import axios from 'axios';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { GET_GARAGE } from './Redux/Actions';
 import { getGarage } from './Redux/ActionsCreators';
 import { getWinners } from './Redux/ActionsCreators';
 import { useSelector } from 'react-redux/es/exports';
-import { GenerateCar } from './Helpers/CarGenerate';
 import { Garage } from './Garage';
 import { Winners } from './Winners';
 import {Link} from "react-router-dom"
