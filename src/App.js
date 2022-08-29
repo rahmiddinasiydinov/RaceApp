@@ -13,8 +13,10 @@ function App() {
   }
   return (
     <div className="App">
-   <h1>Hello world</h1>
-   <button onClick={handleClick}>Click to test</button>
+      <div className="race">
+       <button className='race__btn' onClick={handleClick}>To Garage</button>
+       <button className='race__btn'>To Winners</button>
+      </div>
     </div>
   );
 }
