@@ -6,6 +6,7 @@
 .App{
   background-color: #15133C ;
   min-height: 100vh;
+  padding: 20px;
 }
 .race{
   display: flex;
@@ -24,5 +25,48 @@
       margin-right: 20px;
 
     }
+    &--right{
+      margin-right: 10px;
+    }
   }
+  &__path{
+    margin-bottom: 30px;
+    position: relative;
+  }
+  &__car{
+    border-bottom: 2px dashed  #FFF;
+    &--btn{
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 5px;
+    }
+    &--title{
+      color: #FFF;
+      font-size: 20px;
+    }
+   
+  }
+}
+.btn{
+  padding: 3px;
+  border-radius: 3px;
+  border: none;
+  &__select{
+    background-color: #4E9F3D;
+  }
+  &__remove{
+    background-color: #7E97A6 ;
+  }
+  &__run{
+    background-color:  #F7EA00;
+  }
+  &__stop{
+    background-color: #FF1000;
+  }
+}
+.flag{
+  position: absolute;
+  right: 200px;
+  font-size: 50px;
+  color: #FFF;
 }
