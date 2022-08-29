@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #FFFFFF;
+}
+a{
+  color: #FFF;
+  text-decoration: none;
 }
 .App{
   background-color: #15133C ;
@@ -11,10 +16,12 @@
 .race{
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 30px;
   &__btn{
     padding: 8px 20px;
     border: none;
+    background-color: #FFFFFF;
+    color: #15133C;
     border-radius: 8px;
     transition: .3s;
     &:hover{
@@ -50,6 +57,7 @@
 .btn{
   padding: 3px;
   border-radius: 3px;
+  cursor: pointer;
   border: none;
   &__select{
     background-color: #4E9F3D;
@@ -69,4 +77,23 @@
   right: 200px;
   font-size: 50px;
   color: #FFF;
+}
+.garage{
+  &__title{
+    color: #49FF00;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.winners{
+  &__table{
+    &--header{
+    background-color: #4D96FF;
+    }
+    &--cell{
+      padding:10px 20px;
+    }
+
+  }
 }
