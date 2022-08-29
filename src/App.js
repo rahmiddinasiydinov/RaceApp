@@ -9,7 +9,7 @@ function App() {
   axios.defaults.baseURL='http://localhost:3001/';
   const dispatch = useDispatch();
   const handleClick = ()=>{
-    dispatch(getGarage())
+    dispatch(getGarage());
   }
   return (
     <div className="App">

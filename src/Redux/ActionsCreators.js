@@ -1,7 +1,7 @@
 import * as actions from './Actions';
 
 export const setGarage = (data)=> ({
-    type:actions.GET_GARAGE, 
+    type:actions.GARAGE_SUCCESS, 
     cars:data
 });
 export const getGarage = () => ({type:actions.GET_GARAGE})
