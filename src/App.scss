@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #FFFFFF;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  color: #FFF;
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
+  background-color: #15133C ;
   min-height: 100vh;
+  padding: 20px;
+}
+.race{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  padding-top: 30px;
+  &__btn{
+    padding: 8px 20px;
+    border: none;
+    background-color: #FFFFFF;
+    color: #15133C;
+    border-radius: 8px;
+    transition: .3s;
+    &:hover{
+      box-shadow: 0 0 10px 1px #FFFFFF;
+      cursor: pointer;
+    }
+    &:first-child{
+      margin-right: 20px;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    }
+    &--right{
+      margin-right: 10px;
+    }
   }
-  to {
-    transform: rotate(360deg);
+  &__path{
+    margin-bottom: 30px;
+    position: relative;
+  }
+  &__car{
+    border-bottom: 2px dashed  #FFF;
+    &--btn{
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 5px;
+    }
+    &--title{
+      color: #FFF;
+      font-size: 20px;
+    }
+   
+  }
+}
+.btn{
+  padding: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  &__select{
+    background-color: #4E9F3D;
+  }
+  &__remove{
+    background-color: #7E97A6 ;
+  }
+  &__run{
+    background-color:  #F7EA00;
+  }
+  &__stop{
+    background-color: #FF1000;
+  }
+}
+.flag{
+  position: absolute;
+  right: 200px;
+  font-size: 50px;
+  color: #FFF;
+}
+.garage{
+  &__title{
+    color: #49FF00;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.form{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  &__label{
+    margin: 0  5px;
+  }
+  &__input{
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    color: #000000;
+    &--color{
+      padding: 0;
+      border: none;
+      border-radius: 10px;
+    }
+  }
+  &__btn{
+     color: #15133C;
+     padding: 5px 15px;
+     border: 1px solid transparent;
+     border-radius: 5px;
+     cursor: pointer;
+     margin-left: 10px;
+     transition: .3s;
+     &:hover{
+      border: 1px solid #FFFFFF;
+      color: #FFFFFF;
+      background-color: #15133C;
+     }
+  }
+}
+.winners{
+  &__table{
+    &--header{
+    background-color: #4D96FF;
+    }
+    &--cell{
+      padding:10px 20px;
+    }
+
   }
 }
