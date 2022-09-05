@@ -81,24 +81,7 @@ a{
     font-weight: 700;
   }
 }
-.btn{
-  padding: 3px;
-  border-radius: 3px;
-  cursor: pointer;
-  border: none;
-  &__select{
-    background-color: #4E9F3D;
-  }
-  &__remove{
-    background-color: #7E97A6 ;
-  }
-  &__run{
-    background-color:  #F7EA00;
-  }
-  &__stop{
-    background-color: #FF1000;
-  }
-}
+
 .flag{
   position: absolute;
   right: 200px;
@@ -114,17 +97,7 @@ a{
   }
 }
 
-.winners{
-  &__table{
-    &--header{
-    background-color: #4D96FF;
-    }
-    &--cell{
-      padding:10px 20px;
-    }
 
-  }
-}
 .car{
   position: relative;
   left: 0;

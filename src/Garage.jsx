@@ -5,7 +5,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux/es/exports";
 import { Form } from "./Components/Form";
-
+import { SingleCar } from "./Components/SingleCar";
 export const Garage = ({cars})=>{
 
     const [newName, setNewName] = useState('');
@@ -83,10 +83,7 @@ export const Garage = ({cars})=>{
     //     });
     //  }
 
-    const move = (e)=>{
-        e.target.style.left = '100px';
-        console.log(e.target);
-    }
+  
 
     useEffect(()=>{
        setPageCars(cars?.slice((currentPage-1)*4,  (currentPage-1)*4+4));
@@ -116,23 +113,14 @@ export const Garage = ({cars})=>{
               buttonText = {"Update"}
             />
  
-         {pageCars?.map((car, i )=>{
-            return <div  key={i} className="race__path">
-             <h3 className="race__car--title">{car?.name}</h3>
-             <div className='race__car--btn'>
-               <button className="btn race__btn--right btn__select" onClick={()=>handleSelect(car?.id)}>Select</button>
-               <button className="btn btn__remove" onClick={()=>handleDelete(car?.id)}>Remove</button>
-             </div>
-              <div className="race__car">
-              <span className={`car car-${car?.id}`} onClick={move}>{GenerateCar(car?.color)}</span>
-              <span><i className="fa-solid fa-flag-checkered flag"></i></span>
-              </div>
-             <div className='race__car--btn'>
-               <button className="btn btn__run race__btn--right">Run</button>
-               <button className="btn btn__stop">Stop</button>
-             </div>
-               
-            </div>
+         {pageCars?.map((car, i)=>{
+            return <SingleCar
+                    car={car}
+                    i={i}
+                    handleDelete={handleDelete}
+                    handleSelect={handleSelect}
+
+            />
          })}
          <div className="race__navigation">
             <button className="race__navigation--button nav__prev" disabled={currentPage<=1} onClick={handlePrev}>Prev</button>
