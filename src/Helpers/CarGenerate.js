@@ -1,5 +1,6 @@
 
 export const GenerateCar = (color) => (
+	
 <svg  version="1.1" id="Capa_1"  x="0px" y="0px"
 	 width="100.018px" height="50.017px" viewBox="0 130 324.018 1">
 <g>

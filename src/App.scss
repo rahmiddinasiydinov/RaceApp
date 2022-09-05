@@ -17,6 +17,9 @@ a{
   display: flex;
   justify-content: center;
   padding-top: 30px;
+  &__wrapper{
+    position: relative;
+  }
   &__btn{
     padding: 8px 20px;
     border: none;
@@ -51,7 +54,31 @@ a{
       color: #FFF;
       font-size: 20px;
     }
-   
+  }
+  &__navigation{
+    margin-top: 20px;
+    margin: auto;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    &--button{
+      padding:5px 10px;
+      color: #000000;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+}
+.nav{
+  &__prev, &__next{
+    cursor: pointer;
+    background-color: #49FF00;
+    &:disabled{
+      background-color: rgba($color: #49FF00, $alpha: 0.4);
+    }
+  }
+  &__page{
+    font-weight: 700;
   }
 }
 .btn{
@@ -86,39 +113,7 @@ a{
     margin-top: 20px;
   }
 }
-.form{
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  &__label{
-    margin: 0  5px;
-  }
-  &__input{
-    border: none;
-    border-radius: 2px;
-    padding: 5px;
-    color: #000000;
-    &--color{
-      padding: 0;
-      border: none;
-      border-radius: 10px;
-    }
-  }
-  &__btn{
-     color: #15133C;
-     padding: 5px 15px;
-     border: 1px solid transparent;
-     border-radius: 5px;
-     cursor: pointer;
-     margin-left: 10px;
-     transition: .3s;
-     &:hover{
-      border: 1px solid #FFFFFF;
-      color: #FFFFFF;
-      background-color: #15133C;
-     }
-  }
-}
+
 .winners{
   &__table{
     &--header{
@@ -129,4 +124,8 @@ a{
     }
 
   }
+}
+.car{
+  position: relative;
+  left: 0;
 }
