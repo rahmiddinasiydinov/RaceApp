@@ -1,5 +1,6 @@
 
 export const LittleCarGenerater = (color) => (
+    
     <svg  version="1.1" id="Capa_1"  x="0px" y="0px"
          width="60.018px" height="40.017px" viewBox="0 160 324.018 1">
     <g>

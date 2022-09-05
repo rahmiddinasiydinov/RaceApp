@@ -17,6 +17,9 @@ a{
   display: flex;
   justify-content: center;
   padding-top: 30px;
+  &__wrapper{
+    position: relative;
+  }
   &__btn{
     padding: 8px 20px;
     border: none;
@@ -51,27 +54,34 @@ a{
       color: #FFF;
       font-size: 20px;
     }
-   
+  }
+  &__navigation{
+    margin-top: 20px;
+    margin: auto;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    &--button{
+      padding:5px 10px;
+      color: #000000;
+      border: none;
+      border-radius: 5px;
+    }
   }
 }
-.btn{
-  padding: 3px;
-  border-radius: 3px;
-  cursor: pointer;
-  border: none;
-  &__select{
-    background-color: #4E9F3D;
+.nav{
+  &__prev, &__next{
+    cursor: pointer;
+    background-color: #49FF00;
+    &:disabled{
+      background-color: rgba($color: #49FF00, $alpha: 0.4);
+    }
   }
-  &__remove{
-    background-color: #7E97A6 ;
-  }
-  &__run{
-    background-color:  #F7EA00;
-  }
-  &__stop{
-    background-color: #FF1000;
+  &__page{
+    font-weight: 700;
   }
 }
+
 .flag{
   position: absolute;
   right: 200px;
@@ -86,47 +96,9 @@ a{
     margin-top: 20px;
   }
 }
-.form{
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  &__label{
-    margin: 0  5px;
-  }
-  &__input{
-    border: none;
-    border-radius: 2px;
-    padding: 5px;
-    color: #000000;
-    &--color{
-      padding: 0;
-      border: none;
-      border-radius: 10px;
-    }
-  }
-  &__btn{
-     color: #15133C;
-     padding: 5px 15px;
-     border: 1px solid transparent;
-     border-radius: 5px;
-     cursor: pointer;
-     margin-left: 10px;
-     transition: .3s;
-     &:hover{
-      border: 1px solid #FFFFFF;
-      color: #FFFFFF;
-      background-color: #15133C;
-     }
-  }
-}
-.winners{
-  &__table{
-    &--header{
-    background-color: #4D96FF;
-    }
-    &--cell{
-      padding:10px 20px;
-    }
 
-  }
+
+.car{
+  position: relative;
+  left: 0;
 }

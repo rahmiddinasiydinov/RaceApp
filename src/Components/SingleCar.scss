@@ -1,0 +1,74 @@
+.race{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    &__wrapper{
+      position: relative;
+    }
+    &__btn{
+      padding: 8px 20px;
+      border: none;
+      background-color: #FFFFFF;
+      color: #15133C;
+      border-radius: 8px;
+      transition: .3s;
+      &:hover{
+        box-shadow: 0 0 10px 1px #FFFFFF;
+        cursor: pointer;
+      }
+      &:first-child{
+        margin-right: 20px;
+  
+      }
+      &--right{
+        margin-right: 10px;
+      }
+    }
+    &__path{
+      margin-bottom: 30px;
+      position: relative;
+    }
+    &__car{
+      border-bottom: 2px dashed  #FFF;
+      &--btn{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 5px;
+      }
+      &--title{
+        color: #FFF;
+        font-size: 20px;
+      }
+    }
+    &__navigation{
+      margin-top: 20px;
+      margin: auto;
+      width: 180px;
+      display: flex;
+      justify-content: space-between;
+      &--button{
+        padding:5px 10px;
+        color: #000000;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+  }
+  .btn{
+    padding: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    &__select{
+      background-color: #4E9F3D;
+    }
+    &__remove{
+      background-color: #7E97A6 ;
+    }
+    &__run{
+      background-color:  #F7EA00;
+    }
+    &__stop{
+      background-color: #FF1000;
+    }
+  }
